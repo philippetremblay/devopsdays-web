@@ -68,3 +68,23 @@
 .event-list-footer {
   background-color: #18b;
 }
+
+.quicklinks {
+	background: #1581AB ;
+	color: white;
+}
+
+.quicklinks a {
+	color: white;
+	font-weight: bold;
+}
+
+.quicklinks li {
+	list-style-type:none
+}
+.quicklinks div {
+  height: 100%;
+}
+.future-header {
+  background-color: green;
+}

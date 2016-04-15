@@ -3,48 +3,54 @@
 {{ partial "head.html" . }}
 
 <body lang="{{ .Site.Params.Lang }}">
-  <nav class="navbar navbar-fixed-top navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!-- <a class="navbar-brand" href="#">Arrested DevOps</a> -->
-    </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Presentations</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/organizing">Organizing Guide</a></li>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a class = "social-links" href="https://facebook.com/{{ .Site.Params.social.facebook }}"><i class="fa fa-facebook-square fa-2x"></i></a>
-        </li>
-        <li>
-          <a class = "social-links" href="https://twitter.com/{{ .Site.Params.social.twitter }}"><i class="fa fa-twitter-square fa-2x"></i></a>
-        </li>
-        <li>
-          <a class = "social-links"  href="https://youtube.com/{{ .Site.Params.social.youtube }}"><i class="fa fa-youtube fa-2x"></i></a>
-        </li>
-        <li>
-          <a class = "social-links" href="https://plus.google.com/+{{ .Site.Params.social.googleplus }}"><i class="fa fa-google-plus-square fa-2x"></i></a>
-        </li>
-        <li>
-          <a class = "social-links" href="https://github.com/{{ .Site.Params.social.github }}"><i class="fa fa-github fa-2x"></i></a>
-        </li>
-      </ul>
-    </div><!-- /.nav-collapse -->
-  </div><!-- /.container -->
-</nav><!-- /.navbar -->
-<!-- end of new nav -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <img src = "/img/devopsdays-banner.png" class = "img-responsive">
+        </div>
+      </div>
+      <!-- begin navigation -->
+      <div class="row">
+    		<div class="col-md-8">
+          <!-- begin legacy nav -->
+          <div id="headermenu">
+          <table >
+            <tr>
+              <td>
+                <a href="/"><img alt="home" title="home" src="/images/home.png"></a>
+                <a href="/">Home</a>
+              </td>
+              <td>
+                <a href="/contact/"><img alt="contact" title="contact" src="/images/contact.png"></a>
+                <a href="/contact/">Contact</a>
+              </td>
+              <td>
+                <a href="/events/"><img alt="events" title="events" src="/images/events.png"></a>
+                <a href="/events/">Events</a>
+              </td>
+              <td>
+                <a href="/presentations/"><img alt="presentations" title="presentations" src="/images/presentations.png"></a>
+                <a href="/presentations/">Presentations</a>
+              </td>
+              <td>
+                <a href="/blog/"><img alt="blog" title="blog" src="/images/blog.png"></a>
+                <a href="/blog/">Blog</a>
+              </td>
+            </tr>
+          </table>
+          <!-- end legacy nav -->
+          </div>
 
-<div class="container">
-
-      <div class="row row-offcanvas row-offcanvas-right">
-        <div class = "col-md-12"><img src = "/img/devopsdays-banner.png" class = "img-responsive"></div>
+    		</div>
+        <!-- end navigation col -->
+        <!-- begin social buttons col -->
+    		<div class="col-md-4">
+          <a href="/feed"><img width="32px" height="32px" alt="rss" title="rss feed" src="/images/feed.png"></a>
+          <a href="{{ .Site.Params.Twitter }}"><img width="32px" height="32px" alt="twitter" title="twitter" src="/images/twitter.png"></a>
+          <a href="{{ .Site.Params.Groups }}"><img width="32px" height="32px" alt="mail" title="mailinglist" src="/images/email.png"></a>
+          <!-- <a href="{{ .Site.Params.Facebook }}"><img width="32px" height="32px" alt="mail" title="facebook" src="/images/facebook.png"></a> -->
+          <a href="{{ .Site.Params.Linkedin }}"><img width="32px" height="32px" alt="mail" title="linkedin" src="/images/linkedin.png"></a>
+    		</div>
+        <!-- end social buttons col -->
+    	</div>
+      <!-- end navigation row -->
